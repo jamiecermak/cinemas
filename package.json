@@ -8,6 +8,7 @@
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
+    "test": "vitest",
     "typecheck": "tsc",
     "migrate:gen": "drizzle-kit generate",
     "migrate:run": "tsx app/db/migrate.ts"
@@ -42,7 +43,8 @@
     "tsx": "^4.11.0",
     "typescript": "^5.1.6",
     "vite": "^5.1.0",
-    "vite-tsconfig-paths": "^4.2.1"
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
   },
   "engines": {
     "node": ">=20.0.0"
